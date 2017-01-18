@@ -1,0 +1,252 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    color: black;
+    font-size: 11px;
+}
+
+header {
+    position: fixed;
+    z-index: 15;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1in;
+    border-bottom: #B5E853 dotted 2px;
+    background-color: white;
+}
+
+header h1 {
+    color: gray;
+    position: relative;
+    top: 40px;
+    left: 4in;
+    letter-spacing: .2em;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Cabin Sketch', arial, serif;
+}
+
+nav {
+    position: absolute;
+    top: 1.5in;
+    left: 0px;
+}
+
+ul {
+    list-style: none;
+    margin-left: 15px;
+}
+
+ul li {
+    text-indent: -15px;
+}
+
+ol {
+    margin-left: 33px;
+    margin-bottom: 15px;
+}
+
+ol li {
+    margin-bottom: -15px;
+}
+
+ul.bullets {
+    list-style-type: disc;
+    margin-left: 33px;
+    margin-bottom: 15px;
+}
+
+ul.bullets li {
+    margin-bottom: -15px;
+}
+
+nav ul li {
+    padding: 2px;
+    color: #888;
+}
+
+nav a {
+    text-decoration: none;
+    color: #888;
+    padding: 2px;
+    border-bottom: 1px white dotted;
+}
+
+nav a:hover, nav a:active {
+    border-bottom: 1px #888 dotted;
+}
+
+nav section {
+    padding: 10px;
+    margin-bottom: -8px;
+}
+
+#grading h2 {
+    font-weight: normal;
+    font-size: 11px;
+}
+
+#schedule {
+    position: absolute;
+    left: 2.927in;
+    top: 1.49in;
+}
+
+#schedule h2 {
+    font-size: 50px;
+    color: #B5E853;
+    float: left;
+    padding-top: 24px
+}
+
+#schedule section {
+    clear: both;
+}
+
+#schedule section div {
+    background-color: #444;
+    color: white;
+    float: left;
+    width: 3in;
+    margin: 11px;
+    line-height: 24px;
+    padding: 11px;
+    border-radius: 7px;
+}
+
+#instructions {
+    color: #333;
+    position: absolute;
+    left: 2.99in;
+    top: 1.25in;
+    font-size: 12px;
+    line-height: 24px;
+    width: 6.5in;
+}
+
+#instructions p {
+    margin-bottom: 24px;
+}
+
+#instructions a {
+    text-decoration: none;
+    color: orange;
+    border-bottom: 1px dotted white;
+}
+
+#instructions a:hover, #instructions a:active {
+    border-bottom: 1px dotted orange;
+}
+
+#grading {
+    position: absolute;
+    top: 3.5in;
+    left: 10px;
+    color: #777;
+    line-height: 24px;
+    padding:12px;
+    background-color:whitesmoke;
+}
+
+.due {
+    color: #B5E853;
+}
+
+.date {
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+
+.ex {
+    font-style: italic;
+}
+
+.indent2 {
+    padding-left: 2px;
+}
+
+.indent5 {
+    padding-left: 5px;
+}
+
+.indent15 {
+    padding-left: 15px;
+}
+
+h3.verticalspace {
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 24px;
+}
+
+.listspace li {
+    padding-bottom: 14px;
+    padding-left: 14px;
+    text-indent: 0px;
+}
+
+.linklist li {
+    padding-bottom: 0px;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.instTitle {
+    left: 3in;
+    color: white;
+}
+
+.instHeader {
+    background-color: #B5E853;
+}
+
+#instructions figure {
+    width: 600px;
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+}
+
+li.inner {
+    margin-bottom: -15px;
+    text-indent: 25px;
+}
+
+section h6 {
+    visibility: hidden;
+}
+
+#schedule a {
+    text-decoration: none;
+    color: skyblue;
+}
+
+#schedule a:hover {
+    border-bottom: dotted skyblue 1px
+}
+
+#dueSection {
+	letter-spacing:.25em;
+	line-height:20px;
+	padding:33px 22px 22px 22px;
+	position:fixed;
+	right:-1px;
+	top: 1.55in;
+	background-color:#222;
+}
+#dueSection #closeDue {
+  position:absolute;
+  top:10px;
+  right:11px;
+  font-size:24px;
+}
