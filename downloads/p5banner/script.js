@@ -5,7 +5,11 @@
 console.log("this is a js comment");
 
 function setup() {
+  // createCanvas() is the js equivalent to Processing's size()
+  // create the canvas in a variable called "myCanvas"
   var myCanvas = createCanvas(800, 250);
+
+  // parent "myCanvas" to the id in the html "mySketch"
   myCanvas.parent('mySketch');
   background(255);
 }
