@@ -1,52 +1,27 @@
 // JavaScript Document
-$(function() {
-    console.log('reading');
+$(function(){
+    console.log('js ready');
 
     var myVal = $('#current').offset().top - 100;
+    $('html, body').animate({
+        scrollTop: myVal
+    }, 500, slideNav);
 
-    moveSchedule();
-
-    /*
-    $(window).scroll(function () {
-         clearTimeout($.data(this, 'scrollTimer'));
-         $.data(this, 'scrollTimer', setTimeout(function () {
-             // do something
-             console.log('myVal before adjustment: ' + myVal);
-             myVal = $('html, body').offset().top - 100;
-             console.log('myVal after adjustment: ' + myVal);
-             slideNav();
-         }, 250));
-     });
-     */
-
-
-    function moveSchedule() {
-
-        console.log("moving schedule up");
-
-        $('html, body').animate({
-            scrollTop: myVal
-        }, 500, moveNav);
-    }
-
-    function moveNav() {
-
-        console.log("moving nav down");
-        $('nav').css('position', 'absolute').animate({
+    function slideNav() {
+        //console.log("sliding nav");
+        $('nav').animate({
             top: myVal + 100
         }, 500);
-        console.log('nav is : ' + $('nav').top);
-
-
     }
 
-    $('a').each(function() {
-        $(this).attr({
-            target: "_blank",
-        });
-    });
+     $("a").each(function(){
+         $(this).attr({
+               target: "_blank",
+           });
+     });
 
     $('#closeDue').click(function() {
+      console.log('close due');
         $('#dueSection').hide();
     });
 });
