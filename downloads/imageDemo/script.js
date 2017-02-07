@@ -1,6 +1,6 @@
 // JavaScript Document
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM fully loaded and parsed");
 
     // capture the img element by its id into a variable

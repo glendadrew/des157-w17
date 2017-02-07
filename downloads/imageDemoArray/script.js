@@ -1,5 +1,4 @@
 // JavaScript Document
-console.log('ready');
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM fully loaded and parsed");
@@ -10,11 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // add an eventListener for mouseover that changes the src of the
     // heart image to the image titled "love.png"
 
-    // heart.addEventListener('mouseover', function() {
-    //     heart.src = "images/love.png";
-    // })
-
-    heart.addEventListener('mouseover', getNewImage);
+     heart.addEventListener('mouseover', function() {
+         heart.src = "images/love.png";
+     })
 
     // add an eventListener for mouseout that changes the src of the
     // heart image back to "question.png"
@@ -23,11 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
         heart.src = "images/question.png";
     })
 
-    // eventually add a preload array (wait for details in class)
-    // then display random candy hearts on mouseover
+    // preload array
 
     var imgs = ['images/bemine.png', 'images/biteme.png', 'images/love.png', 'images/lovestinks.png', 'images/puke.png', 'images/question.png', 'images/youandme.png'];
-
     var preload = [];
 
     for (var i = 0; i < imgs.length; i++) {
@@ -38,18 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
         //assign the src for each new image
         preload[i].src = imgs[i];
 
-      console.log(preload[i]);
+        console.log(preload[i]);
     }
 
-     function getNewImage(){
-
-       console.log('newimage');
-       var myRandom = Math.floor(Math.random() * imgs.length);
-
-      console.log(imgs[myRandom]);
-
-      //change the image source
-      heart.src = imgs[myRandom];
-      //document.body.style.backgroundImage = 'url(' + imgs[myRandom] + ')';
-    }
+   // add: display random candy hearts on mouseover
 });

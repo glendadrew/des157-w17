@@ -1,6 +1,6 @@
 // JavaScript Document
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM fully loaded and parsed");
 
     // all other js here
