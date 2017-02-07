@@ -136,13 +136,12 @@ nav section {
 
 #instructions a {
     text-decoration: none;
-    color: #B5E853;
+    color: #84b32b;
     border-bottom: 1px dotted white;
-    font-weight: bold;
 }
 
 #instructions a:hover, #instructions a:active {
-    border-bottom: 1px dotted #B5E853;
+    border-bottom: 1px dotted #6b9b0d;
 }
 
 #grading {
