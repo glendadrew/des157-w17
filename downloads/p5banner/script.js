@@ -4,17 +4,23 @@
 // like print() messages in Processing
 console.log("this is a js comment");
 
-function setup() {
-  // createCanvas() is the js equivalent to Processing's size()
-  // create the canvas in a variable called "myCanvas"
-  var myCanvas = createCanvas(800, 250);
+// check that all of the document object model content has loaded
+// before applying any js
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOM fully loaded and parsed");
 
-  // parent "myCanvas" to the id in the html "mySketch"
-  myCanvas.parent('mySketch');
-  background(255);
-}
+    function setup() {
+        // createCanvas() is the js equivalent to Processing's size()
+        // create the canvas in a variable called "myCanvas"
+        var myCanvas = createCanvas(800, 250);
 
-function draw() {
-  //statements
-  ellipse(100,100,50,50)
-}
+        // parent "myCanvas" to the id in the html "mySketch"
+        myCanvas.parent('mySketch');
+        background(255);
+    }
+
+    function draw() {
+        //statements
+        ellipse(100, 100, 50, 50)
+    }
+});
